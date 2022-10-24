@@ -7,16 +7,16 @@ var attempts = 0;
 const spanId = document.querySelector('.id');
 
 const characters = [
-  'beth',
-  'jerry',
-  'jessica',
-  'morty',
-  'pessoa-passaro',
-  'pickle-rick',
-  'rick',
-  'summer',
-  'meeseeks',
-  'scroopy',
+  'SetoKaiba',
+  'RyoBakura',
+  'YugiMuto',
+  'MaiValentine',
+  'TeaGardner',
+  'Dartz',
+  'JoeyWheeler',
+  'MaximillionPegasus',
+  'RebeccaHawkins',
+  'NoahKaiba',
 ];
 
 const createElement = (tag, className) => {

@@ -8,7 +8,7 @@
   <?php include "./View/includes/css_config.php" ?>
   <script defer src="./../../../View/Assets/js/login.js"></script>
 
-  <title>Expotec Memory Game | Login</title>
+  <title>Yu-Gi-Oh Memory Game | Login</title>
 </head>
 <body>
   <?php if($_SESSION['response'] != ""): ?>
@@ -18,7 +18,7 @@
   <form class="login-form">
     <div class="login__header">
       <img src="./../../../View/Assets/images/brain.png" alt="brain icon">
-      <h1>Expotec Memory Game</h1>
+      <h1>Yu-Gi-Oh Memory Game</h1>
     </div>
 
     <input name="username" type="text" placeholder="Name" class="login__input">
