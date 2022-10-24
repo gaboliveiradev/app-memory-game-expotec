@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../../../View/Assets/css/reset.css">
   <link rel="stylesheet" href="./../../../View/Assets/css/login.css">
-  <?php include "./View/includes/bootstrap/css_config.php" ?>
+  <?php include "./View/includes/css_config.php" ?>
   <script defer src="./../../../View/Assets/js/login.js"></script>
 
   <title>Expotec Memory Game | Login</title>
@@ -25,6 +25,6 @@
     <button type="submit" class="login__button" disabled>Play</button>
   </form>
 
-<?php include "./View/includes/bootstrap/js_config.php" ?>
+<?php include "./View/includes/js_config.php" ?>
 </body>
 </html>
