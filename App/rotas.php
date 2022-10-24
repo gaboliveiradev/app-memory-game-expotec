@@ -3,6 +3,7 @@
 use App\Controller\{
     GameController,
     LoginController,
+    RankController,
     RecordController
 };
 
@@ -23,6 +24,10 @@ switch($parse_uri) {
 
     case "/congratulations":
         RecordController::index();
+    break;
+
+    case "/rank":
+        RankController::index();
     break;
     
     default:

@@ -10,7 +10,7 @@
 
   <script defer src="./../../../View/Assets/js/game.js"></script>
 
-  <title>Expotec Jahu Memory Game</title>
+  <title>Expotec Memory Game | Play</title>
 </head>
 <body>
 

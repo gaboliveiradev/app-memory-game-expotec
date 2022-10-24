@@ -8,7 +8,7 @@
   <?php include "./View/includes/bootstrap/css_config.php" ?>
   <script defer src="./../../../View/Assets/js/login.js"></script>
 
-  <title>Expotec Jahu Memory Game | Login</title>
+  <title>Expotec Memory Game | Login</title>
 </head>
 <body>
   <?php if($_SESSION['response'] != ""): ?>
