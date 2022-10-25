@@ -10,6 +10,6 @@ class RankController extends Controller {
         $model = new RankModel();
         $arr_rank = $model->getRankPlayerByTime();
 
-        parent::render("Rank/rank", $arr_rank);
+        include "./View/modules/Rank/rank.php";
     }
 }
