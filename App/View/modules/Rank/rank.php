@@ -11,7 +11,7 @@
 </head>
 <body>
     <section>
-        <h1 class="text-center">🏆 Rank Expotec Memory Game</h1>
+        <h1 class="text-center">🏆 Rank Memory Game</h1>
     </section>
     <section>
         <p class="text-center">Última atualização do rank em <b><script>document.write(new Date())</script></b></p>
@@ -29,13 +29,25 @@
           <tbody>
             <?php $pos = 1; ?>
             <?php foreach($arr_rank as $item): ?>
-                <tr>
-                  <th scope="row"><?= $pos ?></th>
-                  <td><?= $item->username ?></td>
-                  <td><?= $item->time ?> segundos</td>
-                  <td><?= $item->tentativas ?>x</td>
-                </tr>
-                <?php $pos++ ?>
+              <?php
+                $color_row = ($item->id == $last_id->id) ? "table-warning" : "";
+                if($pos == 1) {
+                  $medal = "🥇";
+                } else if($pos == 2) {
+                  $medal = "🥈";
+                } else if ($pos == 3) {
+                  $medal = "🥉";
+                } else {
+                  $medal = "🏅";
+                }
+              ?>
+              <tr class="<?= $color_row ?>">
+                <th scope="row"><?= $medal ?> <?= $pos ?></th>
+                <td><?= $item->username ?></td>
+                <td><?= $item->time ?> segundos</td>
+                <td><?= $item->tentativas ?>x</td>
+              </tr>
+              <?php $pos++ ?>
             <?php endforeach; ?>
           </tbody>
         </table>

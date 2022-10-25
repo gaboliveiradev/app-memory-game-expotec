@@ -21,7 +21,7 @@
       <h1>Yu-Gi-Oh Memory Game</h1>
     </div>
 
-    <input name="username" type="text" placeholder="Name" class="login__input">
+    <input maxlength="16" name="username" type="text" placeholder="Name" class="login__input">
     <button type="submit" class="login__button" disabled>Play</button>
   </form>
 

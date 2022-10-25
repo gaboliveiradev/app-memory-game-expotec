@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include "./View/includes/css_config.php" ?>
-    <title>Expotec Memory Game | Congratulations</title>
+    <title>Yu-Gi-Oh Memory Game | Congratulations</title>
 
     <style>
         body {
@@ -40,8 +40,29 @@
             <span><strong>⏳ Tempo:</strong> <?= $obj->time ?> segundos</span> <br>
             <span><strong>🎯 Tentativas:</strong> <?= $obj->tentativas ?>x</span>
             <hr>
-            <a href="/game?id_player=<?= $obj->id ?>" type="button" class="btn btn-secondary">Jogar Novamente</a>
-            <button type="button" class="btn btn-success">Rank</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Jogar Novamente
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Você tem certeza que deseja continuar?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Você irá jogar novamente com o username <b>"<?= $obj->username ?></b>". Caso deseje trocar de username clique em <i>"Fechar"</i> e logo em seguinda em <i>"Voltar ao Menu"</i>.<br><br> <b>Atenção</b>, seu <b>record</b> atual será <b>resetado</b>!
+                  </div>
+                  <div class="modal-footer">
+                    <a href="/game?id_player=<?= $obj->id ?>" class="btn btn-success">Confirmar</a>
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <a href="/login" type="button" class="btn btn-danger">Voltar ao Menu</a>
           </div>
         </div>
