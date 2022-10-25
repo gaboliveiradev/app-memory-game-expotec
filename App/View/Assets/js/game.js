@@ -103,7 +103,7 @@ const createCard = (character) => {
   card.appendChild(front);
   card.appendChild(back);
 
-  card.addEventListener('click', revealCard);
+  card.addEventListener('dblclick', revealCard);
   card.setAttribute('data-character', character)
 
   return card;
